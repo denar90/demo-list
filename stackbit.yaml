@@ -85,10 +85,10 @@ models:
             label: Header Image Phone Border
             default: false
             description: Puts a phone border around the header image
-  demoList:
+  demolist:
     type: data
+    label: List Configuration
     file: demoList.json
-    template: demo-list
   footer:
     type: data
     file: footer.yml

@@ -7,7 +7,7 @@
     "build": "unibit build",
     "develop": "unibit develop",
     "start": "unibit develop",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "unibit validate"
   },
   "repository": {
     "type": "git",
