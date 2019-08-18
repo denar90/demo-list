@@ -1,0 +1,24 @@
+<!-- Two -->
+{% if site.data.demoList %}
+<section id="demo-list" class="wrapper">
+    <div class="inner alt">
+    {% for demo in site.data.demoList %}
+        <section class="spotlight">
+            <div class="image"><img src="images/pic01.jpg" alt="" /></div>
+            <div class="content">
+                <h3>{{ demo.title }}</h3>
+                {{ demo.description | markdownify }}
+                <ul class="actions">
+                    <li>
+                        <a href="{{ demo.createSiteUrl }}" class="button primary">Create site</a>
+                    </li>
+                    <li>
+                        <a href="{{ demo.homepage }}" class="button">Live preview</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    {% endfor %}
+    </div>
+</section>
+{% endif %}

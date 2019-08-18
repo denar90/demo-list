@@ -1,0 +1,11 @@
+<!-- Footer -->
+<footer id="footer">
+    {% if site.data.footer.copyright %}
+        <p class="copyright">
+            {% for link in site.data.footer.links %}
+            <a href="{{ link.url }}" {% if link.new_window %}target="_blank" rel="noopener"
+               {% endif %}>{{ link.text }}</a>.
+            {% endfor %}
+        </p>
+    {% endif %}
+</footer>
